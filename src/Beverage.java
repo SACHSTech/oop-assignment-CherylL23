@@ -12,6 +12,8 @@ public abstract class Beverage {
         beveragePrice = aPrice;
     }
 
-    
+    public String getName(){
+        return beverageName;
+    }
 
 }
