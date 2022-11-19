@@ -24,4 +24,8 @@ public abstract class Beverage {
         return beverageSize;
     }
 
+    public void setSize(String newSize){
+        beverageSize = newSize;
+    }
+
 }
