@@ -46,5 +46,6 @@ public abstract class Beverage {
 
     public abstract void recieveI();
 
+    public abstract void displayI();
     
 }
