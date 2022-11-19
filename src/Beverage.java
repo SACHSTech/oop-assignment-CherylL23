@@ -44,4 +44,7 @@ public abstract class Beverage {
         beveragePrice = newPrice;
     }
 
+    public abstract void recieveI();
+
+    
 }
