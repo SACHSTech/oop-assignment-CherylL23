@@ -20,4 +20,8 @@ public abstract class Beverage {
         beverageName = newName;
     }
 
+    public String getSize(){
+        return beverageSize;
+    }
+
 }
