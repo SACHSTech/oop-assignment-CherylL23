@@ -40,4 +40,8 @@ public abstract class Beverage {
         return beveragePrice;
     }
 
+    public void setPrice(double newPrice){
+        beveragePrice = newPrice;
+    }
+
 }
