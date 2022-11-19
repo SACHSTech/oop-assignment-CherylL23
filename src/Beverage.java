@@ -16,4 +16,8 @@ public abstract class Beverage {
         return beverageName;
     }
 
+    public void setName(String newName){
+        beverageName = newName;
+    }
+
 }
