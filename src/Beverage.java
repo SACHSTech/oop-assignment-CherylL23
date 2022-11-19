@@ -31,4 +31,10 @@ public abstract class Beverage {
     public String getTemp(){
         return beverageTemp;
     }
+
+    public void setTemp(String newTemp){
+        beverageTemp = newTemp;
+    }
+
+    
 }
