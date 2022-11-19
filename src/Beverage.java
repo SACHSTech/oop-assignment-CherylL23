@@ -36,5 +36,8 @@ public abstract class Beverage {
         beverageTemp = newTemp;
     }
 
-    
+    public double getPrice(){
+        return beveragePrice;
+    }
+
 }
