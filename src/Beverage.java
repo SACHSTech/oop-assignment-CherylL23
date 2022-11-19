@@ -28,4 +28,7 @@ public abstract class Beverage {
         beverageSize = newSize;
     }
 
+    public String getTemp(){
+        return beverageTemp;
+    }
 }
