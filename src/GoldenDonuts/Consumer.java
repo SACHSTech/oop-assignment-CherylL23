@@ -69,6 +69,12 @@ public class Consumer {
         setCard(strCard);
     }
 
-    
+    public void displayI(){
+        System.out.println("~~ Customer info ~~");
+        System.out.println("Name:" + getName());
+        System.out.println("Email:" + getEmail());
+        System.out.println("Phone number:" + getPhone());
+        System.out.println("Card Number:" + getCard());
+    }
 
 }
