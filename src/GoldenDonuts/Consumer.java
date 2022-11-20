@@ -25,6 +25,10 @@ public class Consumer {
         return conPhone;
     }
 
+    int getCard(){
+        return creditCard;
+    }
+
 
 
 
