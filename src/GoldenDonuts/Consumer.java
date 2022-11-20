@@ -13,7 +13,13 @@ public class Consumer {
         creditCard = cardNum;
     }
 
+    String getName(){
+        return conName;
+    }
+
     
+
+
 
 
 }
