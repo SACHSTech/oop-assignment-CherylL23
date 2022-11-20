@@ -1,4 +1,6 @@
 package GoldenDonuts;
+import java.io.*;
+
 public class Tea extends Beverage{
 
     int sugarLevel;
@@ -16,4 +18,34 @@ public class Tea extends Beverage{
     public void setSugar(int newSugar){
         sugarLevel = newSugar;
     }
+
+    public void recieveI(String[] args) throws IOException {
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("What size do you want? We have small, medium, and large.: ");
+        String strSize = reader.readLine();
+
+        if(strSize.equalsIgnoreCase("small")){
+            setSize(strSize);
+            setPrice(0.50);
+        }
+
+        if(strSize.equalsIgnoreCase("medium")){
+            setSize(strSize);
+            setPrice(1.00);
+        }
+
+        if(strSize.equalsIgnoreCase("large")){
+            setSize(strSize);
+            setPrice(1.50);
+        }
+
+        System.out.println("How sweet do you want your tea to be? (0 = no sugar to 100 = regular sugar): ");
+        int intSugar = Integer.parseInt(reader.readLine());
+        setSugar(intSugar);
+
+    }    
+
+
+
 }
