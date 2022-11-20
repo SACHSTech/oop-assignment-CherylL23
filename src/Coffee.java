@@ -9,5 +9,10 @@ public class Coffee extends Beverage{
         creamTop = whippedCream;
     }
 
+    public boolean getCream(){
+        return creamTop;
+    }
+
+
 
 }
