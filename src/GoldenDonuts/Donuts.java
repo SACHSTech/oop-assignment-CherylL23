@@ -14,6 +14,9 @@ public class Donuts {
     String getDonut(){
         return donutName;
     }
-    
+
+    public void setDonut(String newType){
+        donutName = newType;
+    }
     
 }
