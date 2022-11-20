@@ -21,7 +21,10 @@ public class Consumer {
         return conEmail;
     }
 
- 
+    String getPhone(){
+        return conPhone;
+    }
+
 
 
 
