@@ -1,3 +1,6 @@
+package GoldenDonuts;
+import java.io.*;
+
 public abstract class Beverage {
     
     private String beverageName;
@@ -44,7 +47,7 @@ public abstract class Beverage {
         beveragePrice = newPrice;
     }
 
-    public abstract void recieveI();
+    public abstract void recieveI(String[] args) throws IOException;
 
     public abstract void displayI();
     

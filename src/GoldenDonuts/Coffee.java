@@ -1,5 +1,5 @@
- import java.io.*;
-import java.io.InputStreamReader;
+package GoldenDonuts;
+import java.io.*;
 
 
 public class Coffee extends Beverage{
@@ -20,7 +20,7 @@ public class Coffee extends Beverage{
         creamTop = creamOp;
     }
 
-    public void recieveI(String[] args) throws Exception {
+    public void recieveI(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("What size do you want? We have small, medium, and large.: ");
@@ -41,7 +41,7 @@ public class Coffee extends Beverage{
             setPrice(1.50);
         }
 
-        System.out.println("Do you want whipped cream? Yes or no?: ");
+        System.out.println("Do you want whipped cream (free of charge)? Yes or no?: ");
         String strCream = reader.readLine();
 
         if(strCream.equalsIgnoreCase("yes")){
@@ -53,7 +53,15 @@ public class Coffee extends Beverage{
         }
     }
 
-    
+    public void displayI(){
+        
+        System.out.println("Beverage:" + getName());
+        System.out.println("Size:" + getSize());
+        System.out.println("Temperature:" + getTemp());
+        System.out.println("Whipped cream:" + getCream());
+        System.out.println("Price:" + getPrice());
+    }
+
 
 
 }
