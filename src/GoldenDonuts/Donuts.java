@@ -23,6 +23,10 @@ public class Donuts {
         return donutNum;
     }
 
-    
+    public void setAmount(int newNum){
+        donutNum = newNum;
+    }
+
+
     
 }
