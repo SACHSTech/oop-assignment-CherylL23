@@ -17,8 +17,11 @@ public class Consumer {
         return conName;
     }
 
-    
+    String getEmail(){
+        return conEmail;
+    }
 
+ 
 
 
 
