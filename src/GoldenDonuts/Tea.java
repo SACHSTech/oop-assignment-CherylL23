@@ -12,4 +12,8 @@ public class Tea extends Beverage{
     int getSugar(){
         return sugarLevel;
     }
+
+    public void setSugar(int newSugar){
+        sugarLevel = newSugar;
+    }
 }
