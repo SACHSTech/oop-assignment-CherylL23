@@ -64,7 +64,7 @@ public class Donuts {
 
         if(strType.equalsIgnoreCase("Chocolate glaze")){
             setAmount(intNum);
-            setCost(2.00);
+            setCost(2.15);
             setDonut(strType);
         }
         
@@ -97,5 +97,9 @@ public class Donuts {
         }
     }
 
-  
+    public void displayI(){
+        System.out.println("Donut:" + getDonut());
+        System.out.println("# of donuts:" + getAmount());
+        System.out.println("Price:" + getCost());
+    }
 }
