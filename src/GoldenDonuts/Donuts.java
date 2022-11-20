@@ -1,17 +1,19 @@
 package GoldenDonuts;
+import java.io.*;
+
 public class Donuts {
     
     private String donutName;
     private double donutPrice;
     private int donutNum;
-    
-    public Donut(String donutType, int anAmount, double thePrice){
-        donutName = donutType;
+
+    public Donuts(String donutType, int anAmount, double thePrice){
+        donutName= donutType;
         donutNum = anAmount;
         donutPrice = thePrice;
     }
 
-    String getDonut(){
+    public String getDonut(){
         return donutName;
     }
 
@@ -19,7 +21,7 @@ public class Donuts {
         donutName = newType;
     }
 
-    int getAmount(){
+    public int getAmount(){
         return donutNum;
     }
 
@@ -27,6 +29,15 @@ public class Donuts {
         donutNum = newNum;
     }
 
+    public double getCost(){
+        return donutPrice * donutNum;
+    }
+
+    public void setCost(double newCost){
+        donutPrice = newCost;
+    }
+
+   
 
     
 }
