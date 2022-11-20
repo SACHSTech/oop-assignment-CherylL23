@@ -30,9 +30,13 @@ public class Consumer {
     public void setEmail(String newMail){
         conEmail = newMail;
     }
-    
+
     String getPhone(){
         return conPhone;
+    }
+
+    public void setPhone(String newNum){
+        conPhone = newNum;
     }
 
     int getCard(){
