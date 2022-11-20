@@ -6,7 +6,7 @@ public class Coffee extends Beverage{
 
     boolean creamTop;
 
-    public Coffee(String aName, String aSize, String aTemp, double aPrice, boolean whippedCream){
+    public Coffee(String aName, String aSize, String aTemp, boolean whippedCream, double aPrice){
 
         super(aName, aSize, aTemp, aPrice);
         creamTop = whippedCream;
@@ -61,7 +61,4 @@ public class Coffee extends Beverage{
         System.out.println("Whipped cream:" + getCream());
         System.out.println("Price:" + getPrice());
     }
-
-
-
 }
