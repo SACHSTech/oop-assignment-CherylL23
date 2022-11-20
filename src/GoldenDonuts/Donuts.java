@@ -37,7 +37,65 @@ public class Donuts {
         donutPrice = newCost;
     }
 
-   
+    public void recieveI(String[] args) throws IOException{
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("What type of donut do you want?: ");
+        String strType = reader.readLine();
+        System.out.println("How many do you want?: ");
+        int intNum = Integer.parseInt(reader.readLine());
 
-    
+        if(strType.equalsIgnoreCase("original")){
+            setAmount(intNum);
+            setCost(1.90);
+            setDonut(strType);
+        }
+
+        if(strType.equalsIgnoreCase("Cinnamon Twist")){
+            setAmount(intNum);
+            setCost(2.25);
+            setDonut(strType);
+        }
+
+        if(strType.equalsIgnoreCase("Boston Kreme")){
+            setAmount(intNum);
+            setCost(2.25);
+            setDonut(strType);
+        }
+
+        if(strType.equalsIgnoreCase("Chocolate glaze")){
+            setAmount(intNum);
+            setCost(2.00);
+            setDonut(strType);
+        }
+        
+        if(strType.equalsIgnoreCase("Jelly filled")){
+            setAmount(intNum);
+            setCost(2.75);
+            setDonut(strType);
+        }
+
+        if(strType.equalsIgnoreCase("Green Tea Cruller")){
+            setAmount(intNum);
+            setCost(2.90);
+            setDonut(strType);
+        }
+
+        if(strType.equalsIgnoreCase("Original Cruller")){
+            setAmount(intNum);
+            setCost(2.90);
+            setDonut(strType);
+        }
+
+        if(strType.equalsIgnoreCase("Chocolate Cruller")){
+            setAmount(intNum);
+            setCost(2.00);
+            setDonut(strType);
+        }
+
+        else{
+            System.out.println("Sorry! we do not have it at Golden Donuts.");
+        }
+    }
+
+  
 }
