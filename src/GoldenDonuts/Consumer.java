@@ -27,6 +27,10 @@ public class Consumer {
         return conEmail;
     }
 
+    public void setEmail(String newMail){
+        conEmail = newMail;
+    }
+    
     String getPhone(){
         return conPhone;
     }
