@@ -43,13 +43,32 @@ public class Consumer {
         return creditCard;
     }
 
+    public void setCard(int newCard){
+        creditCard = newCard;
+    }
+
     public void recieveI(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         System.out.println("Please enter your information to make a purchase.");
         System.out.println("Name:");
         String strName = reader.readLine();
         setName(strName);
+
+        System.out.println("Email:");
+        String strMail = reader.readLine();
+        setEmail(strMail);
+
+        System.out.println("Phone number:");
+        String strPhone = reader.readLine();
+        setPhone(strPhone);
+
+        System.out.println("Card Number (no spaces):");
+        int strCard = Integer.parseInt(reader.readLine());
+        setCard(strCard);
     }
+
+    
 
 }
