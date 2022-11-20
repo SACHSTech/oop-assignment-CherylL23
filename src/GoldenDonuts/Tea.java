@@ -8,4 +8,8 @@ public class Tea extends Beverage{
         super(aName, aSize, aTemp, aPrice);
         sugarLevel = sugarPercent;
     }
+
+    int getSugar(){
+        return sugarLevel;
+    }
 }
