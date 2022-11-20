@@ -10,5 +10,10 @@ public class Donuts {
         donutNum = anAmount;
         donutPrice = thePrice;
     }
+
+    String getDonut(){
+        return donutName;
+    }
+    
     
 }
