@@ -1,3 +1,6 @@
+ import java.io.*;
+import java.io.InputStreamReader;
+
 
 public class Coffee extends Beverage{
 
@@ -12,6 +15,12 @@ public class Coffee extends Beverage{
     public boolean getCream(){
         return creamTop;
     }
+
+    public void setCream(boolean creamOp){
+        creamTop = creamOp;
+    }
+
+ 
 
 
 
