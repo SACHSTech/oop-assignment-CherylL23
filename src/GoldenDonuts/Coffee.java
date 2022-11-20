@@ -1,7 +1,6 @@
 package GoldenDonuts;
 import java.io.*;
 
-
 public class Coffee extends Beverage{
 
     boolean creamTop;

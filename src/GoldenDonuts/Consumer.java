@@ -1,4 +1,6 @@
 package GoldenDonuts;
+import java.io.*;
+
 public class Consumer {
     
     private String conName;
@@ -17,6 +19,10 @@ public class Consumer {
         return conName;
     }
 
+    public void setName(String newName){
+        conName = newName;
+    }
+
     String getEmail(){
         return conEmail;
     }
@@ -29,7 +35,13 @@ public class Consumer {
         return creditCard;
     }
 
+    public void recieveI(String[] args) throws IOException {
 
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Please enter your information to make a purchase.");
+        System.out.println("Name:");
+        String strName = reader.readLine();
+        setName(strName);
+    }
 
 }
