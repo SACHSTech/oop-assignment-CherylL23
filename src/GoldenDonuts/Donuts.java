@@ -18,5 +18,11 @@ public class Donuts {
     public void setDonut(String newType){
         donutName = newType;
     }
+
+    int getAmount(){
+        return donutNum;
+    }
+
+    
     
 }
