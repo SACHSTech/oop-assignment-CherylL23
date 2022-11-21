@@ -40,4 +40,23 @@ public class Menu {
         beverageList.add(blackL);
 
     }
+
+    public void getInfo(){
+        System.out.println("* * * DONUT SELECTION * * *");
+
+        for(int m = 1; m < donutList.size(); m++){
+            System.out.println(donutList.get(m));
+        }
+
+        System.out.println("* * * BEVERAGE SELECTION * * *");
+        for(int m = 0; m < beverageList.size(); m++){
+            System.out.println(beverageList.get(m));
+        }
+    }
+
+    public Donuts getDonut(int m){
+        return donutList.get(m);
+    }
+
+    
 }
