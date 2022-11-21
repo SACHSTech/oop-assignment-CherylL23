@@ -58,5 +58,8 @@ public class Menu {
         return donutList.get(m);
     }
 
-    
+    public Beverage getBeverage(int m){
+        return beverageList.get(m - 8);
+    }
+
 }
