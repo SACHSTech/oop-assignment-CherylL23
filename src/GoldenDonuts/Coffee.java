@@ -22,22 +22,26 @@ public class Coffee extends Beverage{
     public void recieveI(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Do you want your coffee to be hot or cold?: ");
+        String strTemp =reader.readLine();
+        setTemp(strTemp);
+
         System.out.println("What size do you want? We have small, medium, and large.: ");
         String strSize = reader.readLine();
 
         if(strSize.equalsIgnoreCase("small")){
             setSize(strSize);
-            setPrice(0.50);
+            setPrice(1.00);
         }
 
         if(strSize.equalsIgnoreCase("medium")){
             setSize(strSize);
-            setPrice(1.00);
+            setPrice(1.50);
         }
 
         if(strSize.equalsIgnoreCase("large")){
             setSize(strSize);
-            setPrice(1.50);
+            setPrice(2.00);
         }
 
         System.out.println("Do you want whipped cream (free of charge)? Yes or no?: ");

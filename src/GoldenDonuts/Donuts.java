@@ -44,7 +44,7 @@ public class Donuts {
         System.out.println("How many do you want?: ");
         int intNum = Integer.parseInt(reader.readLine());
 
-        if(strType.equalsIgnoreCase("original")){
+        if(strType.equalsIgnoreCase("Original")){
             setAmount(intNum);
             setCost(1.90);
             setDonut(strType);
@@ -88,7 +88,7 @@ public class Donuts {
 
         if(strType.equalsIgnoreCase("Chocolate Cruller")){
             setAmount(intNum);
-            setCost(2.00);
+            setCost(2.90);
             setDonut(strType);
         }
 
