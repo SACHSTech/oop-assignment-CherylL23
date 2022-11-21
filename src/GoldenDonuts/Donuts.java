@@ -3,6 +3,7 @@ import java.io.*;
 
 public class Donuts {
     
+    private int menuNum;
     private String donutName;
     private double donutPrice;
     private int donutNum;
@@ -11,6 +12,7 @@ public class Donuts {
         donutName= donutType;
         donutNum = anAmount;
         donutPrice = thePrice;
+        //menuNum = mNum;
     }
 
     public String getDonut(){
@@ -35,6 +37,10 @@ public class Donuts {
 
     public void setCost(double newCost){
         donutPrice = newCost;
+    }
+
+    public String toString(){
+        return donutName;
     }
 
     public void recieveI(String[] args) throws IOException{
@@ -100,6 +106,6 @@ public class Donuts {
     public void displayI(){
         System.out.println("Donut:" + getDonut());
         System.out.println("# of donuts:" + getAmount());
-        System.out.println("Price:" + getCost());
+        System.out.println("Price: $" + getCost());
     }
 }

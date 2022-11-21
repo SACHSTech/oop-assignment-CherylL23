@@ -62,6 +62,6 @@ public class Coffee extends Beverage{
         System.out.println("Size:" + getSize());
         System.out.println("Temperature:" + getTemp());
         System.out.println("Whipped cream:" + getCream());
-        System.out.println("Price:" + getPrice());
+        System.out.println("Price: $" + getPrice());
     }
 }

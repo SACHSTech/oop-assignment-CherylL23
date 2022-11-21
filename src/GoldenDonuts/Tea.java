@@ -51,7 +51,7 @@ public class Tea extends Beverage{
         System.out.println("Beverage:" + getName());
         System.out.println("Size:" + getSize());
         System.out.println("Temperature:" + getTemp());
-        System.out.println("Sugar level:" + getSugar());
+        System.out.println("Sugar level (%):" + getSugar());
         System.out.println("Price:" + getPrice());
     }
 

@@ -18,9 +18,9 @@ public class Menu {
     Donuts chocoC = new Donuts("Chocolate Cruller", 1, 2.90);
 
     //beverages available
-    Coffee blackS = new Coffee("black coffee" , "small", "hot or cold", false, 1.00);
-    Coffee blackM = new Coffee("black coffee" , "small", "hot or cold", false, 1.50);
-    Coffee blackL = new Coffee("black coffee" , "small", "hot or cold", false, 2.00);
+    Coffee blackS = new Coffee("black coffee (S)" , "small", "hot or cold", false, 1.00);
+    Coffee blackM = new Coffee("black coffee (M)" , "small", "hot or cold", false, 1.50);
+    Coffee blackL = new Coffee("black coffee (L)" , "small", "hot or cold", false, 2.00);
  
     public Menu(){
 
@@ -34,6 +34,7 @@ public class Menu {
         donutList.add(greenTea);
         donutList.add(chocoC);
 
+
         //add beverages to the beverage arraylist
         beverageList.add(blackS);
         beverageList.add(blackM);
@@ -44,7 +45,7 @@ public class Menu {
     public void getInfo(){
         System.out.println("* * * DONUT SELECTION * * *");
 
-        for(int m = 1; m < donutList.size(); m++){
+        for(int m = 0; m < donutList.size(); m++){
             System.out.println(donutList.get(m));
         }
 
