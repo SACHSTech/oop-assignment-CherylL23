@@ -44,7 +44,7 @@ public class Donuts {
 
     public void recieveI(String[] args) throws IOException{
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("What type of donut do you want?: ");
+        /**System.out.print("What type of donut do you want?: ");
         String strType = reader.readLine();
         
 
@@ -97,7 +97,7 @@ public class Donuts {
 
         else{
             System.out.println("Sorry! we do not have it at Golden Donuts.");
-        }
+        }*/
 
         System.out.print("How many do you want?: ");
         int intNum = Integer.parseInt(reader.readLine());

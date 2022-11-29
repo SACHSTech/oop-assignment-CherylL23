@@ -22,7 +22,21 @@ public class Order {
         beverageList.add(newBeverage);
         subTotal += newBeverage.getPrice();
     }
-    
+
+    public void showO(int drinkNum, int donutNum){
+        System.out.println("~~~~~ Order Summary ~~~~~");
+        System.out.println("");
+
+        //display donuts bought
+        for(int i = 0; i < donutNum; i++){
+            donutList.get(i).displayI();
+        }
+
+        for(int i = 0; i < drinkNum; i++){
+            beverageList.get(i).displayI();
+        }
+
+    }
 
 
 

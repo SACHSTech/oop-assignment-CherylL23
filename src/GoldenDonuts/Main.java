@@ -11,6 +11,7 @@ public class Main {
         int orderContd = 2;
         int foodNum = 0;
         int beverageNum = 0;
+        Order newOrder = new Order();
         
 
         System.out.println("Welcome to Golden Donuts!");
@@ -51,7 +52,7 @@ public class Main {
                 
             }
         }
-
+        newOrder.showO(foodNum, beverageNum);
     }
     
 }
