@@ -22,7 +22,11 @@ public class Tea extends Beverage{
     public void recieveI(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("What size do you want? We have small, medium, and large.: ");
+        System.out.print("What kind of tea do you want?: ");
+        String strTea = reader.readLine();
+        setName(strTea);
+
+        System.out.print("What size do you want? We have small, medium, and large.: ");
         String strSize = reader.readLine();
 
         if(strSize.equalsIgnoreCase("small")){
@@ -40,7 +44,7 @@ public class Tea extends Beverage{
             setPrice(1.50);
         }
 
-        System.out.println("How sweet do you want your tea to be? (0 = no sugar to 100 = regular sugar): ");
+        System.out.print("How sweet do you want your tea to be? (0 = no sugar to 100 = regular sugar): ");
         int intSugar = Integer.parseInt(reader.readLine());
         setSugar(intSugar);
 

@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Menu {
 
+    //arrayLists
     private ArrayList<Donuts> donutList = new ArrayList<Donuts>();
     private ArrayList<Beverage> beverageList = new ArrayList<Beverage>();
 
@@ -18,10 +19,10 @@ public class Menu {
     Donuts chocoC = new Donuts("Chocolate Cruller", 1, 2.90);
 
     //beverages available
-    Coffee blackS = new Coffee("black coffee (S)" , "small", "hot or cold", false, 1.00);
-    Coffee blackM = new Coffee("black coffee (M)" , "small", "hot or cold", false, 1.50);
-    Coffee blackL = new Coffee("black coffee (L)" , "small", "hot or cold", false, 2.00);
- 
+    Coffee blackS = new Coffee("black coffee" , "small", "hot or cold", false, 1.00);
+    Tea earlGrey = new Tea("Earl Grey", "small", "hot or cold", 100, 0.50);
+    Tea englishB = new Tea("English Breakfast", "small", "hot or cold", 100, 0.5);
+
     public Menu(){
 
         //add donuts to the donut arraylist
@@ -33,21 +34,24 @@ public class Menu {
         donutList.add(crullerO);
         donutList.add(greenTea);
         donutList.add(chocoC);
+        
 
 
         //add beverages to the beverage arraylist
         beverageList.add(blackS);
-        beverageList.add(blackM);
-        beverageList.add(blackL);
+        beverageList.add(earlGrey);
+        beverageList.add(englishB);
 
     }
 
     public void getInfo(){
-        System.out.println("* * * DONUT SELECTION * * *");
 
+        System.out.println("* * * DONUT SELECTION * * *");
         for(int m = 0; m < donutList.size(); m++){
             System.out.println(donutList.get(m));
         }
+
+        System.out.println("");
 
         System.out.println("* * * BEVERAGE SELECTION * * *");
         for(int m = 0; m < beverageList.size(); m++){
@@ -57,10 +61,13 @@ public class Menu {
 
     public Donuts getDonut(int m){
         return donutList.get(m);
+        
     }
 
     public Beverage getBeverage(int m){
         return beverageList.get(m - 8);
+
     }
+
 
 }

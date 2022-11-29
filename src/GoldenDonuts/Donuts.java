@@ -12,7 +12,6 @@ public class Donuts {
         donutName= donutType;
         donutNum = anAmount;
         donutPrice = thePrice;
-        //menuNum = mNum;
     }
 
     public String getDonut(){
@@ -40,60 +39,58 @@ public class Donuts {
     }
 
     public String toString(){
-        return donutName;
+        return " - " + donutName;
     }
 
     public void recieveI(String[] args) throws IOException{
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("What type of donut do you want?: ");
+        System.out.print("What type of donut do you want?: ");
         String strType = reader.readLine();
-        System.out.println("How many do you want?: ");
-        int intNum = Integer.parseInt(reader.readLine());
+        
 
         if(strType.equalsIgnoreCase("Original")){
-            setAmount(intNum);
             setCost(1.90);
             setDonut(strType);
         }
 
-        if(strType.equalsIgnoreCase("Cinnamon Twist")){
-            setAmount(intNum);
+        else if(strType.equalsIgnoreCase("Cinnamon Twist")){
+
             setCost(2.25);
             setDonut(strType);
         }
 
-        if(strType.equalsIgnoreCase("Boston Kreme")){
-            setAmount(intNum);
+        else if(strType.equalsIgnoreCase("Boston Kreme")){
+
             setCost(2.25);
             setDonut(strType);
         }
 
-        if(strType.equalsIgnoreCase("Chocolate glaze")){
-            setAmount(intNum);
+        else if(strType.equalsIgnoreCase("Chocolate glaze")){
+
             setCost(2.15);
             setDonut(strType);
         }
         
-        if(strType.equalsIgnoreCase("Jelly filled")){
-            setAmount(intNum);
+        else if(strType.equalsIgnoreCase("Jelly filled")){
+
             setCost(2.75);
             setDonut(strType);
         }
 
-        if(strType.equalsIgnoreCase("Green Tea Cruller")){
-            setAmount(intNum);
+        else if(strType.equalsIgnoreCase("Green Tea Cruller")){
+  
             setCost(2.90);
             setDonut(strType);
         }
 
-        if(strType.equalsIgnoreCase("Original Cruller")){
-            setAmount(intNum);
+        else if(strType.equalsIgnoreCase("Original Cruller")){
+
             setCost(2.90);
             setDonut(strType);
         }
 
-        if(strType.equalsIgnoreCase("Chocolate Cruller")){
-            setAmount(intNum);
+        else if(strType.equalsIgnoreCase("Chocolate Cruller")){
+
             setCost(2.90);
             setDonut(strType);
         }
@@ -101,6 +98,10 @@ public class Donuts {
         else{
             System.out.println("Sorry! we do not have it at Golden Donuts.");
         }
+
+        System.out.print("How many do you want?: ");
+        int intNum = Integer.parseInt(reader.readLine());
+        setAmount(intNum);
     }
 
     public void displayI(){

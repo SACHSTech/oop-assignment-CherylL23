@@ -9,12 +9,25 @@ public abstract class Beverage {
     private String beverageSize;
     private double beveragePrice;
 
-    public Beverage(String aName, String aSize, String aTemp, double aPrice, int mNum){
+    /**
+     * constructor that creates the instances of the beverage class
+     * 
+     * @param aName name of beverage
+     * @param aSize size of beverage
+     * @param aTemp temperature of beverage
+     * @param aPrice price of beverage
+     * @param mNum menu number for beverage
+     */
+    public Beverage(String aName, String aSize, String aTemp, double aPrice){
         beverageName = aName;
         beverageSize = aSize;
         beverageTemp = aTemp;
         beveragePrice = aPrice;
-        menuNum = mNum;
+        
+    }
+
+    public int getMenuNum(){
+        return menuNum;
     }
 
     public String getName(){
@@ -50,7 +63,7 @@ public abstract class Beverage {
     }
 
     public String toString(){
-        return beverageName;
+        return " - " + beverageName;
     }
 
     public abstract void recieveI(String[] args) throws IOException;
