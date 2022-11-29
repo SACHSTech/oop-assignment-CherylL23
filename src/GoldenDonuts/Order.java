@@ -14,9 +14,16 @@ public class Order {
 
     public void addDonut(Donuts newDonut){
         donutList.add(newDonut);
+        subTotal += newDonut.getCost();
 
     }
 
+    public void addBeverage(Beverage newBeverage){
+        beverageList.add(newBeverage);
+        subTotal += newBeverage.getPrice();
+    }
     
+
+
 
 }
