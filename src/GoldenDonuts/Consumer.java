@@ -3,6 +3,7 @@ import java.io.*;
 
 public class Consumer {
     
+    //variable needed
     private String conName;
     private int creditCard;
     private String conEmail;
@@ -10,7 +11,7 @@ public class Consumer {
 
 
     
-
+    //the user inputs information about themsleves to purchase the goods
     public void recieveI() throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -33,6 +34,7 @@ public class Consumer {
         creditCard = strCard;
     }
 
+    //displays back the information of the user's information input
     public void displayI(){
         System.out.println("~~ Customer info ~~");
         System.out.println("Name:" + conName);

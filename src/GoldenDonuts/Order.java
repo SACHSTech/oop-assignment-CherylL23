@@ -6,7 +6,6 @@ public class Order {
     
     private double subTotal;
     private double finalTotal;
-    private Consumer consumer;
     private ArrayList<Donuts> donutList = new ArrayList<Donuts>();
     private ArrayList<Beverage> beverageList = new ArrayList<Beverage>();
     
@@ -21,7 +20,8 @@ public class Order {
        beverageList.add(newBeverage);
         subTotal += newBeverage.getPrice();
     }
-//
+
+    //displays information on the user's current order
     public void showO(){
         System.out.println("");
         System.out.println("~~~~~ Order Summary ~~~~~");
@@ -49,6 +49,8 @@ public class Order {
         System.out.println("");
         consumer.displayI();
         finalTotal = subTotal * 1.13;
+
+        //output on the costs of the order
         System.out.println("Subtotal: $" + df.format(subTotal));
         System.out.println("Final total with tax: $" + df.format(finalTotal));
         System.out.println("Your order will be ready to pick up in 15 minutes!");

@@ -1,6 +1,5 @@
 package GoldenDonuts;
 import java.io.*;
-import java.text.DecimalFormat;
 
 public class Donuts {
     
@@ -53,6 +52,7 @@ public class Donuts {
         return menuNum + " - " + donutName;
     }
 
+    //the user's preferences and tweaks to enhance the user's experience
     public void recieveI(String[] args) throws IOException{
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 

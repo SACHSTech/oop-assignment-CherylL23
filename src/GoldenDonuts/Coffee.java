@@ -30,6 +30,7 @@ public class Coffee extends Beverage{
         creamTop = creamOp;
     }
 
+    //the user's preferences and tweaks to enhance the user's experience
     public void recieveI(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -62,7 +63,7 @@ public class Coffee extends Beverage{
             setCream(true);
         }
 
-        if(strCream.equalsIgnoreCase("no")){
+        else if(strCream.equalsIgnoreCase("no")){
             setCream(false);
         }
     }
