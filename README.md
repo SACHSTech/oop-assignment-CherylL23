@@ -3,7 +3,8 @@
 
 [*see instructions for details*](Instructions.md)
 
-*Insert Class Diagram here*  
+![text](ClassDiagram.png "Text to show on mouseover") .
 
 ## Summary
-*Include a brief summary that describes your system that your are modelling*
+This program is a prototype of an online self ordering website of a donut shop. In this system, the Menu class contains all of Golden Donut's food products and beverages. When the user selects food items, it is stored in the order class. As result the order class calculates the total payment with and without taxes. In order to fully register that the user has purchased the food items, the system asks for the user's personal info.  
+
