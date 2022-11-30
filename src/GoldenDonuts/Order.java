@@ -8,9 +8,6 @@ public class Order {
     private ArrayList<Donuts> donutList = new ArrayList<Donuts>();
     private ArrayList<Beverage> beverageList = new ArrayList<Beverage>();
     
-    public Order(){
-        consumer = new Consumer();;
-    }
 
     public void addDonut(Donuts newDonut){
         donutList.add(newDonut);
@@ -19,25 +16,32 @@ public class Order {
     }
 
     public void addBeverage(Beverage newBeverage){
-        beverageList.add(newBeverage);
+       beverageList.add(newBeverage);
         subTotal += newBeverage.getPrice();
     }
-
-    public void showO(int drinkNum, int donutNum){
+//
+    public void showO(){
+        System.out.println("");
         System.out.println("~~~~~ Order Summary ~~~~~");
         System.out.println("");
 
         //display donuts bought
-        for(int i = 0; i < donutNum; i++){
-            donutList.get(i).displayI();
+        for(int i = 0; i < donutList.size(); i++){
+           donutList.get(i).displayI();
+            System.out.println();
         }
 
-        for(int i = 0; i < drinkNum; i++){
+        for(int i = 0; i < beverageList.size(); i++){
             beverageList.get(i).displayI();
         }
 
+        
     }
 
+    public void checkOut(){
+        System.out.println("Before you check out, please enter your personal information:");
+        
+    }
 
 
 }

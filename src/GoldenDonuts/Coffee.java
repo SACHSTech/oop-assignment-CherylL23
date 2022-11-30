@@ -3,11 +3,22 @@ import java.io.*;
 
 public class Coffee extends Beverage{
 
+    //variables needed
     boolean creamTop;
 
-    public Coffee(String aName, String aSize, String aTemp, boolean whippedCream, double aPrice){
+    /**
+     * 
+     * @param aName name of coffee
+     * @param aSize size of coffee
+     * @param aTemp temperature of beverage
+     * @param whippedCream checks if the consumer wants whipped cream
+     * @param aPrice price of coffee
+     * @param mNum menu number
+     */
 
-        super(aName, aSize, aTemp, aPrice);
+    public Coffee(String aName, String aSize, String aTemp, boolean whippedCream, double aPrice, int mNum){
+
+        super(aName, aSize, aTemp, aPrice, mNum);
         creamTop = whippedCream;
     }
 
@@ -22,11 +33,11 @@ public class Coffee extends Beverage{
     public void recieveI(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Do you want your coffee to be hot or cold?: ");
+        System.out.print("Do you want your coffee to be hot or cold?: ");
         String strTemp =reader.readLine();
         setTemp(strTemp);
 
-        System.out.println("What size do you want? We have small, medium, and large.: ");
+        System.out.print("What size do you want? We have small, medium, and large.: ");
         String strSize = reader.readLine();
 
         if(strSize.equalsIgnoreCase("small")){
@@ -44,7 +55,7 @@ public class Coffee extends Beverage{
             setPrice(2.00);
         }
 
-        System.out.println("Do you want whipped cream (free of charge)? Yes or no?: ");
+        System.out.print("Do you want whipped cream (free of charge)? Yes or no?: ");
         String strCream = reader.readLine();
 
         if(strCream.equalsIgnoreCase("yes")){

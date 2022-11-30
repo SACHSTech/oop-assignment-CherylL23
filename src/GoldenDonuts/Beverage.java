@@ -3,6 +3,7 @@ import java.io.*;
 
 public abstract class Beverage {
     
+    //variables needed
     private int menuNum;
     private String beverageName;
     private String beverageTemp;
@@ -18,11 +19,12 @@ public abstract class Beverage {
      * @param aPrice price of beverage
      * @param mNum menu number for beverage
      */
-    public Beverage(String aName, String aSize, String aTemp, double aPrice){
+    public Beverage(String aName, String aSize, String aTemp, double aPrice, int mNum){
         beverageName = aName;
         beverageSize = aSize;
         beverageTemp = aTemp;
         beveragePrice = aPrice;
+        menuNum = mNum;
         
     }
 

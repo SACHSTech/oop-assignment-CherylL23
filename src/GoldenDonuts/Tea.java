@@ -3,11 +3,12 @@ import java.io.*;
 
 public class Tea extends Beverage{
 
+    //variables needed
     int sugarLevel;
 
-    public Tea(String aName, String aSize, String aTemp, int sugarPercent, double aPrice){
+    public Tea(String aName, String aSize, String aTemp, int sugarPercent, double aPrice, int mNum){
 
-        super(aName, aSize, aTemp, aPrice);
+        super(aName, aSize, aTemp, aPrice, mNum);
         sugarLevel = sugarPercent;
     }
 
@@ -22,10 +23,6 @@ public class Tea extends Beverage{
     public void recieveI(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("What kind of tea do you want?: ");
-        String strTea = reader.readLine();
-        setName(strTea);
-
         System.out.print("What size do you want? We have small, medium, and large.: ");
         String strSize = reader.readLine();
 

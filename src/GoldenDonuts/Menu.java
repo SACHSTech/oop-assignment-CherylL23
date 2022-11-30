@@ -9,19 +9,19 @@ public class Menu {
     private ArrayList<Beverage> beverageList = new ArrayList<Beverage>();
 
     //donuts for sale
-    Donuts original = new Donuts("Original", 1, 1.90);
-    Donuts twist = new Donuts("Cinnamon Twist", 1, 2.25);
-    Donuts boston = new Donuts("Boston Kreme", 1, 2.25);
-    Donuts chocoG = new Donuts("Chocolate glaze", 1, 2.75);
-    Donuts jelly = new Donuts("Jelly filled", 1, 2.75);
-    Donuts crullerO = new Donuts("Original Cruller", 1, 2.90);
-    Donuts greenTea = new Donuts("Green Tea Cruller", 1, 2.90);
-    Donuts chocoC = new Donuts("Chocolate Cruller", 1, 2.90);
+    Donuts original = new Donuts("Original", 1, 1.90,1);
+    Donuts twist = new Donuts("Cinnamon Twist", 1, 2.25, 2);
+    Donuts boston = new Donuts("Boston Kreme", 1, 2.25, 3);
+    Donuts chocoG = new Donuts("Chocolate glaze", 1, 2.75, 4);
+    Donuts jelly = new Donuts("Jelly filled", 1, 2.75, 5);
+    Donuts crullerO = new Donuts("Original Cruller", 1, 2.90, 6);
+    Donuts greenTea = new Donuts("Matcha Cruller", 1, 2.90, 7);
+    Donuts chocoC = new Donuts("Chocolate Cruller", 1, 2.90, 8);
 
     //beverages available
-    Coffee blackS = new Coffee("black coffee" , "small", "hot or cold", false, 1.00);
-    Tea earlGrey = new Tea("Earl Grey", "small", "hot or cold", 100, 0.50);
-    Tea englishB = new Tea("English Breakfast", "small", "hot or cold", 100, 0.5);
+    Coffee blackS = new Coffee("black coffee" , "small", "hot or cold", false, 1.00, 9);
+    Tea earlGrey = new Tea("Earl Grey", "small", "hot or cold", 100, 0.50, 10);
+    Tea englishB = new Tea("English Breakfast", "small", "hot or cold", 100, 0.5, 11);
 
     public Menu(){
 
@@ -60,12 +60,12 @@ public class Menu {
     }
 
     public Donuts getDonut(int m){
-        return donutList.get(m);
+        return donutList.get(m - 1);
         
     }
 
     public Beverage getBeverage(int m){
-        return beverageList.get(m - 8);
+        return beverageList.get(m - 9);
 
     }
 
