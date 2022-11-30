@@ -65,7 +65,7 @@ public abstract class Beverage {
     }
 
     public String toString(){
-        return " - " + beverageName;
+        return menuNum + " - " + beverageName;
     }
 
     public abstract void recieveI(String[] args) throws IOException;
