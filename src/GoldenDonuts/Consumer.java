@@ -11,7 +11,7 @@ public class Consumer {
 
     
 
-    public void recieveI(String[] args) throws IOException {
+    public void recieveI() throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -28,7 +28,7 @@ public class Consumer {
         String strPhone = reader.readLine();
         conPhone = strPhone;
 
-        System.out.println("Card Number (no spaces):");
+        System.out.print("Card Number (no spaces):");
         int strCard = Integer.parseInt(reader.readLine());
         creditCard = strCard;
     }

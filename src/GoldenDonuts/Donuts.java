@@ -1,5 +1,6 @@
 package GoldenDonuts;
 import java.io.*;
+import java.text.DecimalFormat;
 
 public class Donuts {
     
@@ -41,7 +42,7 @@ public class Donuts {
     }
 
     public double getCost(){
-        return donutPrice * donutNum;
+        return (donutPrice * donutNum);
     }
 
     public void setCost(double newCost){

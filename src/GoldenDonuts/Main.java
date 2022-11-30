@@ -44,13 +44,16 @@ public class Main {
                 }
                 
                 newOrder.showO();
+                System.out.println("");
                 System.out.print("Enter 1 to proceed to checkout. Enter 2 to continue ordering: ");
                 orderContd = Integer.parseInt(reader.readLine());
             }
             
-                
+            newOrder.checkOut(args);
+            break;
         }
-
+        
+        
         
     }
     
